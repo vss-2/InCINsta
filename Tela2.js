@@ -5,10 +5,9 @@ export default class Tela2 extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-
       
         <View style={styles.mainPostContainer}>
-          <Text style={styles.textWhite}> Blocados</Text>
+          <Text style={styles.textWhite}> InCINsta</Text>
           <Text style={styles.posTextWhite}> A project made by TLK Team.</Text>
         </View>
 
@@ -25,7 +24,12 @@ export default class Tela2 extends React.Component {
 
 
         <View style={styles.postContainer}>
+          <TouchableOpacity
+              onPress = { () => this.props.navigation.navigate("TelaPerfil")}
+          >
           <Text style={styles.text}>Perfil </Text>
+          
+          </TouchableOpacity>
           <Text style={styles.posText}>veja suas estatísticas</Text>
         </View>
 
