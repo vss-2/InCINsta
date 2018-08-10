@@ -29,6 +29,17 @@ export default class Tela2 extends React.Component {
           <Text style={styles.posText}>veja suas estatísticas</Text>
         </View>
 
+        <View style={styles.postContainer}>
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate("Ranking")}
+          >
+            <Text style={styles.text}>
+              Ranking
+              </Text>
+            <Text style={styles.posText}>veja sua posição</Text>
+          </TouchableOpacity>
+        </View>
+
         <View style={styles.lastPostContainer}>
           <TouchableOpacity
               onPress = { () => this.props.navigation.navigate("Tela1")}

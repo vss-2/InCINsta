@@ -3,12 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator} from 'react-navigation';
 import Tela1 from './Tela1';
 import Tela2 from './Tela2';
+import Ranking from './Ranking';
 import Telajogar from './Telajogar';
 
 const StackNavigator = createStackNavigator({
     Tela1: Tela1,
     Tela2: Tela2,
     Telajogar: Telajogar,
+    Ranking: Ranking,
 },{
     headerMode: 'none',
   initialRouteName: 'Tela1',
