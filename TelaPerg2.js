@@ -16,15 +16,15 @@ export default class App extends React.Component {
       <Text style = {styles.header}>Blocados</Text>
       </View>
       <View style = {styles.enunciado}>
-      <Text style = {styles.enunciado}>  Qual alternativa não é uma estrutura de repetição: </Text>
-      <Text style = {styles.enunciado}>   int soma1 = 5; </Text>
-      <Text style = {styles.enunciado}>   int soma2 = 7; </Text>
-      <Text style = {styles.enunciado}>   int total = 0; </Text>
-      <Text style = {styles.enunciado}>  for (int i = 0; i < soma2; i++) </Text>
-      <Text style = {styles.enunciado}>   total += soma1; </Text>
-      <Text style = {styles.enunciado}>   } </Text>
-      <Text style = {styles.enunciado}>    System.out.println(total); </Text>
-      <Text style = {styles.enunciado}>   } </Text>
+      <Text style = {styles.enunciado}>  {"Qual alternativa não é uma estrutura de repetição:"} </Text>
+      <Text style = {styles.enunciado}>   {"int soma1 = 5;"} </Text>
+      <Text style = {styles.enunciado}>   {"int soma2 = 7;"} </Text>
+      <Text style = {styles.enunciado}>   {"int total = 0;"} </Text>
+      <Text style = {styles.enunciado}>  {"for (int i = 0; i < soma2; i++)"} </Text>
+      <Text style = {styles.enunciado}>   {"total += soma1;"} </Text>
+      <Text style = {styles.enunciado}>   {"}"} </Text>
+      <Text style = {styles.enunciado}>    {"System.out.println(total);"} </Text>
+      <Text style = {styles.enunciado}>   {"}"} </Text>
 </View>
         <ScrollView contentContainerStyle = {styles.repoList}>
           <Button title="Alternativa A" color="#4f4a4a"/>
