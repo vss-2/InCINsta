@@ -16,15 +16,15 @@ export default class Tela1 extends React.Component {
                 <Image style={styles.imagem} source={require('./myicon.jpg')} />
                 <TextInput onChange={this.handleInput} placeholder = "Usuario" style={styles.input}/>
                 <TouchableOpacity style = {styles.button}
-                                  onPress = { () => this.props.navigation.navigate("Tela2")}
+                                  onPress = { () => this.props.navigation.navigate("Tela2", {
+                                    usuario:this.state.name
+                                  })}
                 >
                     <Text style={styles.welcome}>
                         Inicializar
                     </Text>
                 </TouchableOpacity>
-                {/*}
-                <TelaPerfil usuario={this.state.name}></TelaPerfil> 
-                */}
+                
             </View>
         );
     }

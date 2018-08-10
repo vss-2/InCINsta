@@ -3,6 +3,10 @@ import { StyleSheet, Text, View,  TouchableOpacity } from 'react-native';
 import Tela1 from './Tela1';
 
 export default class Tela2 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {usuario : this.props.navigation.getParam("usuario")};
+}
   render() {
     return (
       <View style={styles.container}>
@@ -14,7 +18,9 @@ export default class Tela2 extends React.Component {
 
         <View style={styles.postContainer}>
           <TouchableOpacity
-              onPress = { () => this.props.navigation.navigate("Telajogar")}
+              onPress = { () => this.props.navigation.navigate("Telajogar", {
+                usuario:this.state.usuario
+              })}
           >
           <Text style={styles.text}>
               Jogar
