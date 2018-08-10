@@ -11,7 +11,7 @@ export default class Tela1 extends React.Component {
                                   onPress = { () => this.props.navigation.navigate("Tela2")}
                 >
                     <Text style={styles.welcome}>
-                        Jogue Agora
+                        Inicializar
                     </Text>
                 </TouchableOpacity>
             </View>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,  TouchableOpacity } from 'react-native';
 
 export default class Tela2 extends React.Component {
   render() {
@@ -13,8 +13,14 @@ export default class Tela2 extends React.Component {
         </View>
 
         <View style={styles.postContainer}>
-            <Text style={styles.text}>Jogar </Text>
-          <Text style={styles.posText}>apenas diversão</Text>
+          <TouchableOpacity
+              onPress = { () => this.props.navigation.navigate("Telajogar")}
+          >
+          <Text style={styles.text}>
+              Jogar
+              </Text>
+              <Text style={styles.posText}>apenas diversão</Text>
+              </TouchableOpacity>
         </View>
 
 
@@ -24,7 +30,11 @@ export default class Tela2 extends React.Component {
         </View>
 
         <View style={styles.lastPostContainer}>
+          <TouchableOpacity
+              onPress = { () => this.props.navigation.navigate("Tela1")}
+          >
           <Text style={styles.textWhite}>Voltar </Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -78,4 +88,5 @@ const styles = StyleSheet.create({
     textAlign:'center',
     color:'white',
   },
+
 });

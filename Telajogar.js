@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,  TouchableOpacity } from 'react-native';
 
 export default class Telajogar extends React.Component {
   constructor(props) {
@@ -41,7 +41,11 @@ export default class Telajogar extends React.Component {
       </View>
 
       <View style={styles.lastPostContainer}>
-        <Text style={styles.textWhite}>Voltar </Text>
+      <TouchableOpacity
+          onPress = { () => this.props.navigation.navigate("Tela2")}
+          >
+          <Text style={styles.textWhite}>Voltar </Text>
+      </TouchableOpacity>
       </View>
       </View>
     );
