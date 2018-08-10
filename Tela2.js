@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View,  TouchableOpacity } from 'react-native';
+import Tela1 from './Tela1';
 
 export default class Tela2 extends React.Component {
   render() {

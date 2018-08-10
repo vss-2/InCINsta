@@ -16,16 +16,16 @@ export default class TelaPerfil extends React.Component {
         
           <Text style={styles.dataTitle}>Curso:</Text>
           <Text style={styles.data}>CC/EC/SI</Text>
-///////////
+
           <Text style={styles.dataTitle}>Período:</Text>
           <Text style={styles.data}>5!</Text>
-//////////////          
+     
           <Text style={styles.dataTitle}>Score:</Text>
           <Text style={styles.data}>8000+</Text>
-/////////////          
+         
           <Text style={styles.dataTitle}>Rank:</Text>
           <Text style={styles.data}>Trivalus</Text>        
-/////////////
+
         
         
         <View style={styles.lastPostContainer}>
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     fontSize:20
   },
   data:{
-    fontsize:15,
+    fontSize:15,
     marginLeft:16,
   }
 

@@ -3,10 +3,6 @@ import { Button , Text, View, StyleSheet, ScrollView } from 'react-native';
 import { Constants } from 'expo';
 
 
-import AssetExample from './components/AssetExample';
-
-
-import { Card } from 'react-native-elements';
 
 export default class App extends React.Component {
   render() {

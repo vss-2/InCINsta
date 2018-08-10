@@ -1,7 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, TextInput, View, TouchableOpacity, Image } from 'react-native';
+import TelaPerfil from './TelaPerfil';
 
 export default class Tela1 extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {name : null};
+    }
     handleInput = (e) => {
         this.setState({"name": e.target.value})
     }
@@ -17,7 +22,9 @@ export default class Tela1 extends React.Component {
                         Inicializar
                     </Text>
                 </TouchableOpacity>
-                <TelaPerfil usuario={this.state.name}></TelaPerfil>
+                {/*}
+                <TelaPerfil usuario={this.state.name}></TelaPerfil> 
+                */}
             </View>
         );
     }
