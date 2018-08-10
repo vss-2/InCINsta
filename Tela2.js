@@ -5,7 +5,6 @@ export default class Tela2 extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-
       
         <View style={styles.mainPostContainer}>
           <Text style={styles.textWhite}> InCINsta</Text>

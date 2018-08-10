@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View,  TouchableOpacity, Image } from 'react-native';
+import Tela1 from './Tela1';
 
 export default class TelaPerfil extends React.Component {
   render() {
@@ -10,7 +11,7 @@ export default class TelaPerfil extends React.Component {
           <Text style={styles.textWhite}> Perfil</Text>
         </View>
         <Image style={styles.imagem} source={require('./myicon.jpg')} />
-        <Text style={styles.username}>Teixero</Text>
+        <Text style={styles.username}>{this.props.usuario}</Text>
         
         
           <Text style={styles.dataTitle}>Curso:</Text>
