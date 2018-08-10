@@ -1,51 +1,35 @@
 import React from 'react';
-import { StyleSheet, Text, TextInput, View, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { createStackNavigator} from 'react-navigation';
+import Tela1 from './Tela1';
+import Tela2 from './Tela2';
+import Telajogar from './Telajogar';
+
+const StackNavigator = createStackNavigator({
+    Tela1: Tela1,
+    Tela2: Tela2,
+    Telajogar: Telajogar,
+},{
+    headerMode: 'none',
+  initialRouteName: 'Tela1',
+});
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-            <Image style={styles.imagem} source={require('./myicon.jpg')} />
-            <TextInput placeholder = "Usuario"style={styles.input}/>
-            <TouchableOpacity style = {styles.button}>
-            <Text style={styles.welcome}>Jogue Agora</Text>
-            </TouchableOpacity>
-        </View>
-    );
+        <StackNavigator />
+      </View>
+    )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-      display: 'flex' ,
+      backgroundColor: '#FFF',
+      flex: 1,
+      display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-    backgroundColor: '#fff',
+      flexWrap: 'nowrap',
   },
-    input:{
-	height:80,
-	width: "50%",
-        textAlign: 'center',
-	fontSize:18,
-	marginTop: 0,
-    },
-    button:{
-      alignItems: 'center',
-      backgroundColor: '#8899AA',
-        width: "60%",
-        height: "07%"
-    },
-    welcome:{
-      fontSize: 30
-    },
-
-    imagem:{
-      borderWidth: 2,
-        borderColor: "black",
-      marginTop: 0,
-      width:"20%",
-        height:"15%"
-    },
 });
