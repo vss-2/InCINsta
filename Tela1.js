@@ -7,14 +7,15 @@ export default class Tela1 extends React.Component {
         super(props);
         this.state = {name : null};
     }
-    handleInput = (e) => {
-        this.setState({"name": e.target.value})
+    handleInput = (input) => {
+        this.setState({"name": input})
     }
     render() {
+        console.log(this.state.name);
         return (
             <View style={styles.container}>
-                <Image style={styles.imagem} source={require('./myicon.jpg')} />
-                <TextInput onChange={this.handleInput} placeholder = "Usuario" style={styles.input}/>
+                <Image style={styles.imagem} source={require('./myicon.jpeg')} />
+                <TextInput onChangeText={this.handleInput} placeholder = "Usuario" style={styles.input}/>
                 <TouchableOpacity style = {styles.button}
                                   onPress = { () => this.props.navigation.navigate("Tela2", {
                                     usuario:this.state.name
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: "black",
         marginTop: 0,
-        width:"20%",
-        height:"15%"
+        width:"50%",
+        height:"20%"
     },
 });

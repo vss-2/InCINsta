@@ -8,14 +8,16 @@ export default class TelaPerfil extends React.Component {
     this.state = {usuario : this.props.navigation.getParam("usuario")};
 }
   render() {
+
     return (
       <View style={styles.container}>
 
         <View style={styles.mainPostContainer}>
           <Text style={styles.textWhite}> Perfil</Text>
         </View>
-        <Image style={styles.imagem} source={require('./myicon.jpg')} />
-        <Text style={styles.username}>{this.state.usuario}</Text>
+        <Image style={styles.imagem} source={require('./myicon.jpeg')} />
+          <Text style={styles.dataTitle}>Nome:</Text>
+          <Text style={styles.username}>{this.state.usuario}</Text>
         
         
           <Text style={styles.dataTitle}>Curso:</Text>
@@ -70,14 +72,13 @@ const styles = StyleSheet.create({
     color:'white',
   },
   
-  imagem:{
-        borderWidth: 1,
-        borderColor: "black",
-        marginTop: 20,
-        marginLeft: 20,
-        width:"20%",
-        height:"15%"
-    },
+  imagem: {
+    borderWidth: 2,
+    borderColor: "black",
+    marginTop: 0,
+    width: "50%",
+    height: "20%"
+  },
   username:{
       fontSize:40,
   },

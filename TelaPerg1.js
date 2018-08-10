@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   enunciado :{
-    height: 50,
+    marginBottom: 10,
     paddingTop: 5,
     textAlign: 'center',
     backgroundColor: '#2289A9',

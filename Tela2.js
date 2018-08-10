@@ -7,7 +7,7 @@ export default class Tela2 extends React.Component {
     super(props);
     this.state = {usuario : this.props.navigation.getParam("usuario")};
 }
-  render() {
+render() {
     return (
       <View style={styles.container}>
       
@@ -18,9 +18,7 @@ export default class Tela2 extends React.Component {
 
         <View style={styles.postContainer}>
           <TouchableOpacity
-              onPress = { () => this.props.navigation.navigate("Telajogar", {
-                usuario:this.state.usuario
-              })}
+              onPress = { () => this.props.navigation.navigate("Telajogar")}
           >
           <Text style={styles.text}>
               Jogar
@@ -32,8 +30,10 @@ export default class Tela2 extends React.Component {
 
         <View style={styles.postContainer}>
           <TouchableOpacity
-              onPress = { () => this.props.navigation.navigate("TelaPerfil")}
-          >
+            onPress={() => this.props.navigation.navigate("TelaPerfil", {
+              usuario: this.state.usuario
+            })}
+            >
           <Text style={styles.text}>Perfil </Text>
           
           </TouchableOpacity>
