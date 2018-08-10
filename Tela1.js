@@ -1,12 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, TextInput, View, TouchableOpacity, Image } from 'react-native';
+import TelaPerfil from './TelaPerfil';
 
 export default class Tela1 extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {name : null};
+    }
+    handleInput = (e) => {
+        this.setState({"name": e.target.value})
+    }
     render() {
         return (
             <View style={styles.container}>
                 <Image style={styles.imagem} source={require('./myicon.jpg')} />
-                <TextInput placeholder = "Usuario" style={styles.input}/>
+                <TextInput onChange={this.handleInput} placeholder = "Usuario" style={styles.input}/>
                 <TouchableOpacity style = {styles.button}
                                   onPress = { () => this.props.navigation.navigate("Tela2")}
                 >
@@ -14,10 +22,15 @@ export default class Tela1 extends React.Component {
                         Inicializar
                     </Text>
                 </TouchableOpacity>
+                {/*}
+                <TelaPerfil usuario={this.state.name}></TelaPerfil> 
+                */}
             </View>
         );
     }
 }
+
+
 
 const styles = StyleSheet.create({
     container: {

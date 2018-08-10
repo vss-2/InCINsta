@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View,  TouchableOpacity } from 'react-native';
+import Tela1 from './Tela1';
 
 export default class Tela2 extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-
       
         <View style={styles.mainPostContainer}>
           <Text style={styles.textWhite}> InCINsta</Text>
@@ -32,6 +32,17 @@ export default class Tela2 extends React.Component {
           
           </TouchableOpacity>
           <Text style={styles.posText}>veja suas estatísticas</Text>
+        </View>
+
+        <View style={styles.postContainer}>
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate("Ranking")}
+          >
+            <Text style={styles.text}>
+              Ranking
+              </Text>
+            <Text style={styles.posText}>veja sua posição</Text>
+          </TouchableOpacity>
         </View>
 
         <View style={styles.lastPostContainer}>

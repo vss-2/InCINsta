@@ -30,8 +30,14 @@ export default class Telajogar extends React.Component {
       </View>
 
       <View style={styles.postContainer}>
-        <Text style={styles.text}>Jogar Casual </Text>
-        <Text style={styles.posText}>Jogue para se desafiar</Text>
+       <TouchableOpacity style = {styles.button}
+      onPress = { () => this.props.navigation.navigate("TelaPerg1")}>
+                    <Text style={styles.text}> Jogo Casual </Text>
+                </TouchableOpacity>
+        <TouchableOpacity style = {styles.button}
+      onPress = { () => this.props.navigation.navigate("TelaPerg1")}>
+                    <Text style={styles.posText}> Jogue para se desafiar </Text>
+                </TouchableOpacity>
       </View>
       
 
