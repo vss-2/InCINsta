@@ -9,7 +9,7 @@ export default class Ranking extends React.Component {
 
 
                 <View style={styles.mainPostContainer}>
-                    <Text style={styles.textWhite}> Blocados</Text>
+                    <Text style={styles.textWhite}> InCINsta</Text>
                     <Text style={styles.posTextWhite}> A project made by TLK Team.</Text>
                 </View>
 

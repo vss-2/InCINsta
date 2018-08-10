@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button , Text, View, StyleSheet, ScrollView } from 'react-native';
+import { Button, Text, View, StyleSheet, ScrollView, TouchableOpacity} from 'react-native';
 import { Constants } from 'expo';
 
 
@@ -8,10 +8,10 @@ export default class App extends React.Component {
   render() {
     return (
       <View style = {styles.container}>
-      <View style = {styles.header}>
+      <View >
       <Text style = {styles.header}>Blocados</Text>
       </View>
-      <View style = {styles.enunciado}>
+      <View>
       <Text style = {styles.enunciado}> Qual alternativa não é uma estrutura de repetição?
 </Text>
 </View>
