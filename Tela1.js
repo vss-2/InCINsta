@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     },
 
     imagem:{
-        borderWidth: 2,
+        borderWidth:0,
         borderColor: "black",
         marginTop: 0,
         width:"50%",
