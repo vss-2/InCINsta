@@ -66,7 +66,7 @@ render() {
 const styles = StyleSheet.create({
   container: {//caixa principal, abrangendo o todo.
    flex:1,
-   backgroundColor:"white",
+   backgroundColor:"#ffffff",
   },
   mainPostContainer:{//caixa principal, com nome do programa.
     margin:0,
@@ -92,23 +92,23 @@ const styles = StyleSheet.create({
     fontSize: 35,
     fontWeight: '900',
     textAlign: 'center',
-    color:'black',
+    color:'#000000',
     margin: 0,
   },
   textWhite:{
     fontSize:35,
     textAlign:'center',
-    color:'white',
+    color:'#ffffff',
   },
   posText:{//ambos os posText são as letras pequenas no menu.
     fontSize:12,
     textAlign:'center',
-    color:'black',
+    color:'#000000',
   },
   posTextWhite:{
     fontSize:12,
     textAlign:'center',
-    color:'white',
+    color:'#ffffff',
   },
 
 });
